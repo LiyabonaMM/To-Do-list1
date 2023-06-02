@@ -1,103 +1,143 @@
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .todo-container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  #newTaskInput {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    flex: 1 1 100%;
+    width: auto;
+    margin-top: 10px;
+  }
+  
+  #addTaskButton {
+    margin-left: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+  }
 
-h1 {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.todo-container {
-  max-width: 400px;
-  margin: 20px auto;
-  background-color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-#newTaskInput {
-  flex-grow: 1;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 14px;
-}
-
-#addTaskButton {
-  margin-left: 10px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 3px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-#addTaskButton:hover {
-  background-color: #45a049;
-}
-
-.task-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.task-list li {
-  display: flex;
-  align-items: center;
-  padding: 8px 0;
-  border-bottom: 1px solid #ccc;
-}
-
-.task-list li:last-child {
-  border-bottom: none;
-}
-
-.task-list li input[type="checkbox"] {
-  margin-right: 10px;
-}
-
-.task-list li .close-btn {
-  margin-left: auto;
-  color: #f44336;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.task-list li.completed span {
-  text-decoration: line-through;
-  color: #999;
-}
-
-.sort-button {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.sort-button button {
-  background-color: #2196f3;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 3px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.sort-button button:hover {
-  background-color: #1976d2;
-}
+  
+  #addTaskButton:hover {
+    background-color: #45a049;
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .task-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .task-list li input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .task-list li .close-btn {
+    margin-left: auto;
+    color: #f44336;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .task-list li.completed span {
+    text-decoration: line-through;
+    color: #999;
+  }
+  
+  .sort-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .sort-button button {
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .sort-button button:hover {
+    background-color: #1976d2;
+  }
+  
+  /* Media queries for mobile responsiveness */
+  
+  @media (max-width: 600px) {
+    .todo-container {
+      max-width: 100%;
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #newTaskInput {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    #addTaskButton {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .sort-button {
+      flex-direction: column;
+    }
+  
+    .sort-button button {
+      margin-bottom: 10px;
+    }
+  }
+  
