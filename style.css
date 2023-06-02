@@ -13,7 +13,7 @@ body {
   .todo-container {
     max-width: 400px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: white;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -29,7 +29,7 @@ body {
   #newTaskInput {
     flex-grow: 1;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid grey;
     border-radius: 3px;
     font-size: 14px;
     flex: 1 1 100%;
@@ -39,8 +39,8 @@ body {
   
   #addTaskButton {
     margin-left: 10px;
-    background-color: #4caf50;
-    color: #fff;
+    background-color: green;
+    color: white;
     border: none;
     padding: 8px 16px;
     border-radius: 3px;
@@ -52,7 +52,7 @@ body {
 
   
   #addTaskButton:hover {
-    background-color: #45a049;
+    background-color: green;
   }
   
   .task-list {
@@ -65,7 +65,7 @@ body {
     display: flex;
     align-items: center;
     padding: 8px 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
   }
   
   .task-list li:last-child {
@@ -95,7 +95,7 @@ body {
   }
   
   .sort-button button {
-    background-color: #2196f3;
+    background-color: black;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -105,7 +105,7 @@ body {
   }
   
   .sort-button button:hover {
-    background-color: #1976d2;
+    background-color: black;
   }
   
   /* Media queries for mobile responsiveness */
